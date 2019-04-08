@@ -1,12 +1,39 @@
-# template [![Build Status](https://travis-ci.com/react-native-hooks/template.svg?branch=master)](https://travis-ci.com/react-native-hooks/template) [![Maintainability](https://api.codeclimate.com/v1/badges/66997889d9122a22f79b/maintainability)](https://codeclimate.com/github/react-native-hooks/template/maintainability)
-> A template for creating React Native hooks project
+# @rnhooks/share [![Build Status](https://travis-ci.com/react-native-hooks/share.svg?branch=master)](https://travis-ci.com/react-native-hooks/share) [![Maintainability](https://api.codeclimate.com/v1/badges/1193d3c7e4cac429b41d/maintainability)](https://codeclimate.com/github/react-native-hooks/sharel/maintainability)
+
+> React Native hook for [Camera Roll](https://facebook.github.io/react-native/docs/cameraroll#docsNav)
 
 ### Installation
 
 ```bash
-$ git clone https://github.com/react-native-hooks/template.git example-template
-$ cd example-template
+yarn add @rnhooks/share
 ```
 
-The dependencies are linked using [yalc](https://github.com/whitecolor/yalc).
-You can link them locally and test using the [examples](https://github.com/react-native-hooks/template/tree/master/example) directory.
+### Usage
+
+```js
+import useShare from '@rnhooks/share';
+
+function App() {
+  const [onShare, shared, loading, error] = useShare();
+  return (
+    <View style={styles.container}>
+      <Text style={styles.welcome}>@rnhooks/share</Text>
+      <Button title="Share" onPress={onShare} />
+      {!(loading || error) && (
+        <Text style={styles.instructions}>{shared.toString()}</Text>
+      )}
+    </View>
+  );
+}
+
+```
+
+### Output
+
+| Name      | Default    | Type     | Description                  |
+| --------- | :--------- | --------:| ---------------------------- |
+| onShare   | `() => {}` | function | Share Function               |
+| shared    | `false`    | boolean  | Content is shared or not     |
+| activity  | `null`     | string   | Get Shared Activity          |
+| loading   | `false`    | boolean  | Loading State                |
+| error     | `undefined`| boolean  | Error State                  |
