@@ -1,0 +1,13 @@
+{
+  "version": "v1",
+  "packages": {
+    "@rnhooks/template": {
+      "signature": "6e1edee38025a6e62bba29e139aa7251",
+      "file": true
+    },
+    "@rnhooks/share": {
+      "signature": "2f3f165ce89241f543b695c7d13e43e5",
+      "file": true
+    }
+  }
+}
