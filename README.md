@@ -1,6 +1,6 @@
-# @rnhooks/share [![Build Status](https://travis-ci.com/react-native-hooks/share.svg?branch=master)](https://travis-ci.com/react-native-hooks/share) [![Maintainability](https://api.codeclimate.com/v1/badges/1193d3c7e4cac429b41d/maintainability)](https://codeclimate.com/github/react-native-hooks/sharel/maintainability)
+# @rnhooks/share [![Build Status](https://travis-ci.com/react-native-hooks/share.svg?branch=master)](https://travis-ci.com/react-native-hooks/share) [![Maintainability](https://api.codeclimate.com/v1/badges/60fd46c56bd3356f88c1/maintainability)](https://codeclimate.com/github/react-native-hooks/share/maintainability)
 
-> React Native hook for [Camera Roll](https://facebook.github.io/react-native/docs/cameraroll#docsNav)
+> React Native hook for [Share](https://facebook.github.io/react-native/docs/share#docsNav)
 
 ### Installation
 
